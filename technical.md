@@ -95,6 +95,12 @@ like if order items contains product name it will depend on product id so we wil
 - no transitive dependency the non-key should not depend on other non-key columns
 - remove transitive dependency create a whole new table and put all dependents and determinent into it and keep the determinent in the orignal table as foriegn key.
 
+## Indexing
+- Data structure to faster the querying process on database 
+- foreign keys should be indexed sql server does not do it by default
+- also the columns which are used in where clauses
+- the column which mostly contain unique data like email userid etc in orders table the column which narrow down to tens of rows 
+
 # Asp .Net Core
 - cross platform to create optimized web apps or web apis developed by microsoft
 - program.cs is the entry point we create builder register services then define middleware pipeline 
@@ -117,3 +123,45 @@ like if order items contains product name it will depend on product id so we wil
 - same API serves web app, mobile app, and third party integrations
 ### Security 
 - database is never exposed directly, API controls what goes in and out
+
+# Architectures
+
+## MVC
+- Stands for model view controller full stack architecture the controllers map the url and takes request process then return .cshtml files as response rather than json 
+- tightly couples used for monolithic apps and small apps because as app grows code become complex
+
+## Monolith
+- Everything in a single repo the frontend,backend and database tightly couples
+## N Tier
+- Mono repo but we have layers like presentation, database, services etc
+## Clean Architecture
+WebAPI → Application ← Infrastructure
+              ↓
+           Domain
+- Dependency goes inward only the business layer is not dependent on any other layer but still a monolithic architecture
+### Layers
+Domain and application does not cummunicate with external libs like EF Core Infrastructure does that
+#### Domain Layer
+- Define entities and business rules here 
+- Business rules inside entities
+
+#### Application Layer
+- Define Services,interfaces and DTO's here but not implementations
+
+#### Infrastructure Layer
+- Implement the interfaces here, write sql server queries in repositories here
+
+#### Presentation Layer
+- Write controllers here which exposes end point to clients
+
+## Microservice
+- Each service has its own responsibility and own database and each service is deployed separately 
+### Cummunication
+
+#### via HTTP
+- This is called synchrnous cummunication each service waits untill the called service reponds
+
+#### via Message Bus
+- This is asynchrnous cummunication each service does its part of the job and put the request in the message bus other service consume it from the bus
+- One service fail does not crash the whole app
+- Complex required mature devOps engineers
