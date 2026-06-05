@@ -94,3 +94,26 @@ like if order items contains product name it will depend on product id so we wil
 ## 3NF
 - no transitive dependency the non-key should not depend on other non-key columns
 - remove transitive dependency create a whole new table and put all dependents and determinent into it and keep the determinent in the orignal table as foriegn key.
+
+# Asp .Net Core
+- cross platform to create optimized web apps or web apis developed by microsoft
+- program.cs is the entry point we create builder register services then define middleware pipeline 
+- middle are the functions that executes in the https request response pipeline used to filter out or verify requests
+- Asp.Net Core built in dependency injection
+- AddTransient when new instance for every new request
+- AddScoped one instance for one HTTP request
+- AddSingleton one insance for the whole app
+- AllowAnonymous for the end points that completely public not required authentication like home page
+- Dependency injection is when a class recieves its dependencies via constructor instead of creating inside it itself, it makes classes losely coupled, make independent testing possible and easy to swap whenever needed
+
+# What is API?
+
+- "API stands for Application Programming Interface. It's a contract between two systems that defines how they communicate. In web development, a REST API exposes endpoints over HTTP — the client sends a request to a URL, the server processes it and returns JSON."
+
+## Why APIs Exist — 3 Points
+###  Separation 
+- frontend and backend are independent, different teams can work on each
+###  Reusability 
+- same API serves web app, mobile app, and third party integrations
+### Security 
+- database is never exposed directly, API controls what goes in and out
