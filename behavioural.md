@@ -4,15 +4,15 @@ A practical checklist to help you prepare for technical interviews.
 
 ## 1. Resume (Start Here)
 
-- Keep your resume clear concise and one page.
-- Add only relevant Education and previous experience
+- Keep your resume clear, concise, and one page.
+- Add only relevant education and previous experience.
 - Make it ATS-friendly:
   - Use simple formatting and standard section headings (Summary, Skills, Experience, Projects, Education).
   - Include keywords from the job description naturally.
   - Avoid graphics, icons, text boxes, and complex tables.
 - Focus on impact in bullet points: start with action verbs and include results where possible.
 - Proofread carefully for grammar and consistency.
-- Dont show desperation on interview call and try to speak confidently and in English
+- Don't show desperation during the interview; speak confidently and, if possible, in English.
 
 ## 2. Projects and Technologies You Can Defend
 
@@ -63,4 +63,4 @@ A practical checklist to help you prepare for technical interviews.
 
 ## 9. Never show desperation
 
-- Never say i really want this job i'll do my best or be informal with the interviewer it makes you look immature
+- Never say "I really want this job; I'll do anything" or be informal with the interviewer; it can make you appear unprofessional.

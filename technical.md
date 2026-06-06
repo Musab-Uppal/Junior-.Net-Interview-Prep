@@ -1,3 +1,55 @@
+# Technical Topics (moved)
+
+This file has been split into topic-focused files. See:
+
+- **OOP:** [oop.md](oop.md)
+- **Database (Normalization & Indexing):** [database.md](database.md)
+- **ASP.NET Core:** [aspnet-core.md](aspnet-core.md)
+- **APIs:** [api.md](api.md)
+- **Architectures:** [architectures.md](architectures.md)
+- **Authentication & Authorization:** [authentication-and-authorization.md](authentication-and-authorization.md)
+- **Short Differences:** [short-differences.md](short-differences.md)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # OOP
 
 ## Encapsulation
@@ -52,75 +104,9 @@ inversion seggregation dont force classes to implement funciton that they will n
 dependency inversion high level modules should not depend on low level implementations use interfaces
 
 
-# LINQ and EF Core
+## Database (moved)
 
-Linq is language integrated query it just performs some filtering or other functions on in memory enumrables while EF Core is a complete database framework it communicate with database for us performing read write quries it also converts linq queries into db query 
-EF Core also have some special functions which Linq itself dont have like include which is for join and thenInclude for double join and asnotracking to get only readonly data its just a little faster
-EF Core also have from raw sql function to directly write SQL
-Pure LINQ uses .ToList(), EF Core uses .ToListAsync()
-
-- LINQ is the query syntax that works on any collection. EF Core uses LINQ on IQueryable to translate C# expressions into SQL at the database level. The critical difference is IQueryable defers execution and runs on the DB, while IEnumerable runs in memory — using the wrong one on large tables is a classic performance bug.
-
-Query is not executes untill we call a terminal function like .tolistasync or toarrayasyn
-## Types of LINQ Quries
-
-### 1. Method Syntax (Lambda) — what everyone uses
-- var products = _context.Products
-    .Where(p => p.Price > 5000)
-    .OrderBy(p => p.Name)
-    .Select(p => p.Name)
-    .ToListAsync();
-
-### 2. Query Syntax (SQL-like) — rarely used in modern .NET
-- var products = (from p in _context.Products
-                where p.Price > 5000
-                orderby p.Name
-                select p.Name)
-               .ToList();
-
-## Dapper 
-Dapper is a micro ORM. You write raw SQL yourself, Dapper just maps the results to your C# objects. Nothing more.
-### Where to Use Dapper
-- Not a replacement for EF Core — use both together. EF Core for standard CRUD, Dapper for complex heavy queries.
-# DB First and Code First approaches
-
-## Code First
-- Use Code first when db does not exists yet and for greenfield projects
-- easy to track, if team is small and project is not complex
-- complex databases are difficult to map in code 
-- make files then run command 
-dotnet ef migrations add InitialCreate
-dotnet ef database update
-
-## DB First
-When database already exists just run the command and class files are automatically generated 
-dotnet ef dbcontext scaffold "ConnectionString" 
-it also generate db context class 
-
-
-# Database
-
-## 1NF
-- no repeating group like phone no: can be more than one if add new row then data redundancy if array then conflicts 
-- Multiple values create problems in performing operations like select or join
-- solution create another table with order items and add order id as foreign key
-- remove multivalued attributes into another table
-
-## 2NF
-
-- no partial dependency every column should be completely depend on pk no any other column
-like if order items contains product name it will depend on product id so we will move product name to product table only 
-- remove partial dependency
-
-## 3NF
-- no transitive dependency the non-key should not depend on other non-key columns
-- remove transitive dependency create a whole new table and put all dependents and determinent into it and keep the determinent in the orignal table as foriegn key.
-
-## Indexing
-- Data structure to faster the querying process on database 
-- foreign keys should be indexed sql server does not do it by default
-- also the columns which are used in where clauses
-- the column which mostly contain unique data like email userid etc in orders table the column which narrow down to tens of rows 
+Database topics have been moved to [database.md](database.md).
 
 # Asp .Net Core
 - cross platform to create optimized web apps or web apis developed by microsoft
