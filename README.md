@@ -18,7 +18,7 @@ A focused collection of everything you need to crack a junior .NET developer int
 | 6 | 🔐 Auth | [06-authentication-authorization.md](06-authentication-authorization.md) | JWT, Roles, Claims, Policies, Token Storage |
 | 7 | 💻 C# Fundamentals | [07-csharp-fundamentals.md](07-csharp-fundamentals.md) | Short differences, .NET Core vs Framework, JWT vs Session |
 | 8 | 🤝 Behavioural | [08-behavioural.md](08-behavioural.md) | Interview tips, resume advice, STAR method |
-| — | 👤 Personal | [personal.md](personal.md) | Personalized HR answers for Gluon ERP |
+
 
 ---
 
@@ -59,7 +59,23 @@ A focused collection of everything you need to crack a junior .NET developer int
 5. **Auth** — JWT/session is always asked.
 6. **C# Fundamentals** — quick-fire difference questions.
 7. **Behavioural** — don't neglect this; it's half the interview.
-8. **Personal** — company-specific HR answers.
+
+---
+
+## 🤝 Contributing
+
+Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+
+If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
+Don't forget to give the project a star! Thanks again!
+
+Please see our [Contributing Guidelines](CONTRIBUTING.md) and [Code of Conduct](CODE_OF_CONDUCT.md) for more details.
+
+---
+
+## 📄 License
+
+Distributed under the MIT License. See [`LICENSE`](LICENSE) for more information.
 
 ---
 
