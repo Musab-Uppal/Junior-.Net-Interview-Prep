@@ -18,6 +18,7 @@ A focused collection of everything you need to crack a junior .NET developer int
 | 6 | 🔐 Auth | [06-authentication-authorization.md](06-authentication-authorization.md) | JWT, Roles, Claims, Policies, Token Storage |
 | 7 | 💻 C# Fundamentals | [07-csharp-fundamentals.md](07-csharp-fundamentals.md) | Short differences, .NET Core vs Framework, JWT vs Session |
 | 8 | 🤝 Behavioural | [08-behavioural.md](08-behavioural.md) | Interview tips, resume advice, STAR method |
+| 9 | [Optional] 🧪 Testing | [09-testing.md](09-testing.md) | [Optional for Junior Roles] |
 
 
 ---

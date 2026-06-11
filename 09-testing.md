@@ -1,4 +1,4 @@
-# 🧪 Testing
+# 🧪 Testing [Optional for Junior Roles]
 
 A complete guide to unit testing in .NET — one of the most commonly asked topics in junior developer interviews.
 
